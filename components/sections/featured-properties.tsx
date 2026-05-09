@@ -56,7 +56,7 @@ export function FeaturedProperties() {
 
         <Reveal className="mt-20 flex justify-center sm:mt-24">
           <Link
-            href="#catalogo"
+            href="/properties"
             className="border-hairline hover:border-gold/60 hover:bg-gold/5 active:scale-[0.98] group inline-flex items-center gap-3 rounded-full border px-6 py-3 text-sm tracking-wide transition-[background-color,border-color,transform] duration-500"
           >
             Ver el catálogo completo
@@ -77,7 +77,7 @@ function PropertyCard({
 }) {
   return (
     <Link
-      href={`#${property.slug}`}
+      href={`/properties/${property.slug}`}
       className="group block"
     >
       <div

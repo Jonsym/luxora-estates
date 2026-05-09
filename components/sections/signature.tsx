@@ -30,7 +30,7 @@ export function Signature() {
           <Reveal className="lg:col-span-7" duration={1.1}>
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
               <ParallaxImage
-                src={p.hero}
+                src={p.image}
                 alt={p.imageAlt}
                 travel={100}
                 sizes="(min-width: 1024px) 60vw, 100vw"
@@ -65,7 +65,7 @@ export function Signature() {
               </RevealItem>
 
               <RevealItem className="text-muted-foreground mt-10 max-w-md space-y-5 text-base leading-relaxed">
-                {p.story.map((paragraph, i) => (
+                {p.description.slice(0, 2).map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}
               </RevealItem>
@@ -90,18 +90,18 @@ export function Signature() {
 
               <RevealItem className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
-                  href="#contacto"
+                  href={`/properties/${p.slug}`}
                   className="border-gold/60 hover:bg-gold hover:text-primary-foreground active:scale-[0.98] group inline-flex h-12 items-center gap-3 rounded-full border px-7 text-sm font-medium tracking-wide transition-[background-color,color,transform] duration-500"
                 >
-                  Solicitar información
+                  Ver la propiedad
                   <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </Link>
                 <Link
-                  href="#galeria"
+                  href="/#contacto"
                   className="text-foreground/85 hover:text-foreground inline-flex items-center gap-2 px-2 py-3 text-sm transition-colors"
                 >
                   <span className="bg-foreground/40 size-1 rounded-full" />
-                  Ver galería completa
+                  Solicitar información
                 </Link>
               </RevealItem>
             </Reveal>

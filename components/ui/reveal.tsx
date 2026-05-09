@@ -89,7 +89,7 @@ export function RevealItem({
   children: ReactNode;
   className?: string;
   y?: number;
-  as?: "div" | "li" | "p" | "span" | "h2" | "h3";
+  as?: "div" | "li" | "p" | "span" | "h1" | "h2" | "h3";
 }) {
   const reduced = useReducedMotion();
   const distance = reduced ? 0 : y;

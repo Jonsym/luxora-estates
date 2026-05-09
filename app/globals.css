@@ -163,6 +163,18 @@
   }
 }
 
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @layer components {
   /* Layered on top of the Tailwind-generated `.font-display`
      (font-family from @theme) to add editorial type polish. */

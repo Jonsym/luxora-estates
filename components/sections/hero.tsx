@@ -134,10 +134,10 @@ export function Hero() {
 
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3 sm:gap-4">
                 <Link
-                  href="#colecciones"
+                  href="/properties"
                   className="border-gold/60 hover:bg-gold hover:text-primary-foreground active:scale-[0.98] group inline-flex h-12 items-center gap-3 rounded-full border px-6 text-sm font-medium tracking-wide transition-[background-color,color,transform] duration-500 sm:px-7"
                 >
-                  Explorar la colección
+                  Explorar el catálogo
                   <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </Link>
                 <Link
