@@ -42,8 +42,8 @@ export function PropertiesExplorer({ properties }: { properties: Property[] }) {
 
   return (
     <>
-      {/* Filter bar — sticky only at lg+ to avoid eating mobile viewport. */}
-      <div className="border-hairline relative z-30 border-y bg-background/85 supports-[backdrop-filter]:bg-background/65 supports-[backdrop-filter]:backdrop-blur-2xl supports-[backdrop-filter]:saturate-150 lg:sticky lg:top-20">
+      {/* Filter bar — non-sticky; scrolls with the page. */}
+      <div className="border-hairline relative z-30 border-y bg-background/85 supports-[backdrop-filter]:bg-background/65 supports-[backdrop-filter]:backdrop-blur-2xl supports-[backdrop-filter]:saturate-150">
         <div className="mx-auto w-full max-w-[88rem] px-6 py-6 sm:px-8 sm:py-8 lg:px-12 lg:py-9">
           <PropertyFilters
             filters={filters}
