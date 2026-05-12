@@ -28,12 +28,12 @@ export function CtaBanner() {
         transition={{ duration: 1.6, ease, delay: 0.3 }}
         className="pointer-events-none absolute inset-0 -z-10"
       >
-        <div className="absolute left-1/2 top-1/2 h-[60vh] w-[80vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,oklch(0.78_0.10_85/0.10),transparent)] blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 h-[60vh] w-[80vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,oklch(0.62_0.105_80/0.12),transparent)] blur-3xl" />
         <div
           className="absolute inset-x-0 top-0 h-px"
           style={{
             background:
-              "linear-gradient(90deg, transparent, oklch(1 0 0 / 0.08) 30%, oklch(1 0 0 / 0.08) 70%, transparent)",
+              "linear-gradient(90deg, transparent, oklch(0.20 0.008 60 / 0.10) 30%, oklch(0.20 0.008 60 / 0.10) 70%, transparent)",
           }}
         />
       </motion.div>

@@ -45,11 +45,11 @@ export function PropertyHero({ property }: { property: Property }) {
           </motion.div>
           <div
             aria-hidden
-            className="absolute inset-0 bg-[radial-gradient(120%_80%_at_30%_20%,oklch(0.135_0.006_80/0.45)_0%,oklch(0.135_0.006_80/0.78)_60%,oklch(0.135_0.006_80/0.95)_100%)]"
+            className="absolute inset-0 bg-[radial-gradient(120%_80%_at_30%_20%,oklch(0.975_0.006_80/0.20)_0%,oklch(0.975_0.006_80/0.62)_60%,oklch(0.975_0.006_80/0.94)_100%)]"
           />
           <div
             aria-hidden
-            className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-background/50 to-background"
+            className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-background/55 to-background"
           />
         </div>
 

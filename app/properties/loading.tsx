@@ -112,7 +112,7 @@ function Shimmer() {
       className="pointer-events-none absolute inset-0 -translate-x-full animate-[shimmer_2.6s_ease-in-out_infinite]"
       style={{
         background:
-          "linear-gradient(90deg, transparent, oklch(0.78 0.10 85 / 0.06) 50%, transparent)",
+          "linear-gradient(90deg, transparent, oklch(0.62 0.105 80 / 0.12) 50%, transparent)",
       }}
     />
   );
