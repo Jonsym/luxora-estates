@@ -55,20 +55,20 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Tonal stack — lifts the image toward ivory so dark text reads clearly */}
+        {/* Tonal stack — darkens the image so light text reads cleanly */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-[radial-gradient(120%_80%_at_28%_30%,oklch(0.975_0.006_80/0.30)_0%,oklch(0.975_0.006_80/0.72)_55%,oklch(0.975_0.006_80/0.94)_100%)]"
+          className="absolute inset-0 bg-[radial-gradient(120%_80%_at_28%_30%,oklch(0.135_0.006_80/0.55)_0%,oklch(0.135_0.006_80/0.85)_55%,oklch(0.135_0.006_80/0.95)_100%)]"
         />
         <div
           aria-hidden
-          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-background/55 to-background"
+          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-background/40 to-background"
         />
-        {/* Subtle film grain via SVG noise. Multiply blend lays a warm
-            charcoal texture onto the bright ivory wash. */}
+        {/* Subtle film grain via SVG noise. Overlay lays a soft cinematic
+            texture onto the dark wash. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.045] mix-blend-multiply"
+          className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"
           style={{
             backgroundImage:
               "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",

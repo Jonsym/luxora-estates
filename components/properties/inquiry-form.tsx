@@ -246,7 +246,7 @@ function Field({
             "border-hairline focus-visible:border-gold/60 placeholder:text-muted-foreground/40",
             "w-full border-b bg-transparent py-3 text-[0.95rem] tracking-wide",
             "outline-none transition-[border-color] duration-300",
-            "[color-scheme:light]",
+            "[color-scheme:dark]",
           )}
         />
       )}
